@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>CGPA Calculator</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">CGPA Estimator</h1>
+    <p><b>Enter you Current CGPA (Enter 0 if this is your first semester).</b></p>
+    <p><b>Enter the value of total credits you have obtained till now (Enter 0 if this is your first semester).</b></p>
+<form class="PresentCG">
+	Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
+	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
+	</form>
+    <p><b>Enter the subject credits and expected grades in the table below.</b></p>
+	<form class="Expected">
+		          <table>
+				  <tr>
+				    <th></th>
+				    <th>Grade</th>
+				    <th>Credit</th>
+				  </tr>
+				  <tr>
+				    <td>SUBJECT 1</td>
+				    <td><input type="number" name="sub1grade" id="sub1grade" value="0"></td>
+				    <td><input type="number" name="sub1credits" id="sub1credits" value="0"></td>
+				  </tr>
+				  <tr>
+				    <td>SUBJECT 2</td>
+				    <td><input type="number" name="sub2grade" id="sub2grade" value="0"></td>
+				    <td><input type="number" name="sub2credits" id="sub2credits" value="0"></td>
+				  </tr>
+				  <tr>
+				    <td>SUBJECT 3</td>
+				    <td><input type="number" name="sub3grade" id="sub3grade" value="0"></td>
+				    <td><input type="number" name="sub3credits" id="sub3credits" value="0"></td>
+				  </tr>
+				  <tr>
+				    <td>SUBJECT 4</td>
+				    <td><input type="number" name="sub4grade" id="sub4grade" value="0"></td>
+				    <td><input type="number" name="sub4credits" id="sub4credits" value="0"></td>
+				  </tr>
+				  <tr>
+				    <td>SUBJECT 5</td>
+				    <td><input type="number" name="sub5grade" id="sub5grade" value="0"></td>
+				    <td><input type="number" name="sub5credits" id="sub5credits" value="0"></td>
+				  </tr>
+				  <tr>
+				    <td>SUBJECT 6</td>
+				    <td><input type="number" name="sub6grade" id="sub6grade" value="0"></td>
+				    <td><input type="number" name="sub6credits" id="sub6credits" value="0"></td>
+				  </tr>
+				</table>
+                <script src="app.js" charset="utf-8"></script>
+	<form>
+		<input class="btn" type="Submit" name="Submit!" onclick="cg()">
+	</form>
+</body>
+</html>
